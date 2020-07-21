@@ -1,0 +1,18 @@
+#debug: true
+
+
+spring:
+  data:
+    mongodb:
+#      uri: mongodb://localhost:27017/testdb
+      port: 27017
+      database: testdb
+#      host: localhost
+
+logging:
+  level:
+    reactor.ipc.netty.http: DEBUG
+    org.mongodb.driver: ERROR
+    springframework:
+      http.server.reactive.ReactorHttpHandlerAdapter: DEBUG
+      boot.web.embedded.netty: DEBUG
